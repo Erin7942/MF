@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yellowtail&display=swap');;
+@font-face {
+    font-family: 'HSGaeulsenggak';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSGaeulsenggak.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#wrap{width:100%; height: 100%; padding-right: 180px; }
+/* 네비게이션 부분 */
+#wrap > h1 {font-size: 0;}
+header .logo_box{position: absolute; right: 35px; top: 75px;}
+header .logo_box img{width:100px;}
+#wrap header{width: 180px; height: 100%; position: fixed; right: 0; top: 0; background: url(images/menu_bg1.png) repeat-y; z-index: 11;}
+
+/* 네비게이션 글씨부분 */
+#wrap header nav{width: 100%; height: 100%; font-family: 'Playfair Display';}
+#wrap header nav ul{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center;}
+#wrap header nav ul li{margin:0px 0px 10px 0px; list-style: none; font-family: 'Playfair Display', serif; }
+#wrap header nav li a{font-size: 20px; font-weight: 100; line-height: 30px;color: rgb(104, 104, 104); text-decoration : none;}
+
+ /* 마우스로 클릭후 계속 색상 유지 */
+ #wrap header nav ul li:hover a, #wrap header nav ul li.on a{color:cornflowerblue;}
+ #wrap header nav ul li:hover:after, #wrap header nav ul li.on::after{color:cornflowerblue;}
+
+
+/* 각 컨테이너 메뉴 */
+#container{width:100%; height: 100%; position: relative; max-width: 1920px; margin: 0 auto; }
+#container .content{width: 100%; height: 100%; position: absolute; }
+#menu1{left:0%;background:url(images/content_bg1.png) repeat;}
+#container #menu2{left:23%; background:url(images/content_bg2.png) repeat;}
+#container #menu3{left:46%; background:url(images/content_bg3.png) repeat;}
+#container #menu4{left:69%; background:url(images/content_bg4.png) repeat;} 
+
+
+
+/* 푸터 */
+footer{width: 150px; position: fixed; right: 0;bottom: 0; padding: 0 0px 30px 20px;
+font-size: 11px; color: #7e7e7e; z-index: 12;}
+footer > a{display: block; width: 16px; height: 16px; position: absolute; top: -20px; transition: .4s;}
+footer > a.naver{background: url(images/social_b_facebook.png) no-repeat; right:30px}
+footer > a.naver:hover{background: url(images/social_b_facebook_hover.png) no-repeat;}
+
+footer > a.instagram{background: url(images/social_b_instar.png) no-repeat; right: 60px;}
+footer > a.instagram:hover{background: url(images/social_b_instar_hover.png) no-repeat;}
+
+footer > a.twit{background: url(images/social_b_twitter.png) no-repeat; right: 89px;}
+footer > a.twit:hover{background: url(images/social_b_twitter_hover.png) no-repeat;}
+
+
