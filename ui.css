@@ -7,8 +7,12 @@
     font-style: normal;
 }
 
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:none; max-width: 100%;}
+a{ text-decoration:none;}
 
-#wrap{width:100%; height: 100%; padding-right: 180px; }
+#wrap{width:100%; height: 100%; padding-right: 180px; overflow: hidden;}
 /* 네비게이션 부분 */
 #wrap > h1 {font-size: 0;}
 header .logo_box{position: absolute; right: 35px; top: 75px;}
@@ -28,11 +32,12 @@ header .logo_box img{width:100px;}
 
 /* 각 컨테이너 메뉴 */
 #container{width:100%; height: 100%; position: relative; max-width: 1920px; margin: 0 auto; }
-#container .content{width: 100%; height: 100%; position: absolute; }
-#menu1{left:0%;background:url(images/content_bg1.png) repeat;}
-#container #menu2{left:23%; background:url(images/content_bg2.png) repeat;}
-#container #menu3{left:46%; background:url(images/content_bg3.png) repeat;}
-#container #menu4{left:69%; background:url(images/content_bg4.png) repeat;} 
+#container .content{width: 23%; height: 100%; position: absolute; }
+#container #menu1{left:0px;background:url(images/content_bg1.png)}
+#container #menu2{left: 435px; background:url(images/content_bg2.png) }
+#container #menu3{left:865px; background:url(images/content_bg3.png) }
+#container #menu4{left:1300px; background:url(images/content_bg4.png) } 
+
 
 
 
