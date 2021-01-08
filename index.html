@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title> 꽃의 새벽 </title>
     <link rel="stylesheet" href="ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!--[if lt IE 9]>
-        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        < type="text/javascript" src="js/html5shiv.min.js"></>
     <![endif]-->
-
 
 </head>
 <body>
@@ -24,11 +24,52 @@
                 </ul>
             </nav>
         </header>
+<script>
+$(document).ready(function () {
+    $('#menu1  img').mouseover(function () {
+        $(this).css('opacity','0').stop().attr("src", "images/content_bg1_c.png").animate({opacity:1},800);
+    })
+        .mouseout(function () {
+        $(this).attr("src", "images/content_bg1.png");
+    });
+    $('#menu2  img').mouseover(function () {
+        $(this).css('opacity','0').stop().attr("src", "images/content_bg2_c.png").animate({opacity:1},800);
+    })
+        .mouseout(function () {
+        $(this).attr("src", "images/content_bg2.png");
+    });
+
+    $('#menu3  img').mouseover(function () {
+        $(this).css('opacity','0').stop().attr("src", "images/content_bg3_c.png").animate({opacity:1},800);
+    })
+        .mouseout(function () {
+        $(this).attr("src", "images/content_bg3.png");
+    });
+    $('#menu4  img').mouseover(function () {
+        $(this).css('opacity','0').stop().attr("src", "images/content_bg4_c.png").animate({opacity:1},800);
+    })
+        .mouseout(function () {
+        $(this).attr("src", "images/content_bg4.png");
+    });
+});
+    </script>
+
+
+
+
         <section id="container">
-            <div id="menu1" class="content"></div>
-            <div id="menu2" class="content"><img src="images/content_bg2.png" alt=""></div>
-            <div id="menu3" class="content"><img src="images/content_bg3.png" alt=""></div>
-            <div id="menu4" class="content"><img src="images/content_bg4.png" alt=""></div>
+            <div id="menu1" class="content"><img src="images/content_bg1.png" alt="타무즈">
+                <h2>타무즈</h2>
+            </div>
+            <div id="menu2" class="content"><img src="images/content_bg2.png" alt="엔림">
+                <h2>엔림</h2>
+            </div>
+            <div id="menu3" class="content"><img src="images/content_bg3.png" alt="데네흐">
+                <h2>데네흐</h2>
+            </div>
+            <div id="menu4" class="content"><img src="images/content_bg4.png" alt="세티">
+                <h2>세티</h2>
+            </div>
         </section>
         <footer>
             <p>Team LemonVelvet</p>
